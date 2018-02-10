@@ -36,16 +36,19 @@ use exploit/linux/http/netgear_wnr2000_rce;exploit -j;
 With each new module on it's own line.
 
 ## Dependencies
-AutoSploit depends on the following Python2.7 modules.
+
+AutoSploit depends on the following modules.
 ```
 shodan
 blessings
 ```
-Should you find you do not have these installed get them with pip like so.
+
+You can install these dependencies via `requirements.txt`:
+
+```shell
+pip install -r requirements.txt
 ```
-pip install shodan
-pip install blessings
-```
+
 Since the program invokes functionality from the Metasploit Framework you need to have this installed also. 
 Get it from Rapid7 by clicking [here](https://www.rapid7.com/products/metasploit/).
 
